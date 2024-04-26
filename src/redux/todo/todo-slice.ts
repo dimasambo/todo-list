@@ -2,6 +2,7 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 const initialState = {
   todoList: [] as TodoItem[],
+  todosType: 'active' as TodosType,
   deletedTodoList: [] as TodoItem[],
 }
 
@@ -31,6 +32,9 @@ const todoSlice = createSlice({
       const todoToRestore = state.deletedTodoList.find(todo => todo.id === action.payload.id);
       state.deletedTodoList = state.deletedTodoList.filter(todo => todo.id !== action.payload.id);
       todoToRestore && state.todoList.unshift(todoToRestore);
+    },
+    changeTodosType(state: InitialStateType, action: PayloadAction<TodosType>) {
+      state.todosType = action.payload;
     }
   },
 });
@@ -39,7 +43,8 @@ export const {
   addTodo,
   removeTodo,
   toggleComplete,
-  restoreTodo
+  restoreTodo,
+  changeTodosType
 } = todoSlice.actions
 
 export default todoSlice.reducer;
