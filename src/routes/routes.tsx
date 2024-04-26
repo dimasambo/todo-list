@@ -6,7 +6,6 @@ import {Root} from "../pages/root/page.tsx";
 
 export const routes: RouteObject[] = [
   {
-    path: routeLinks.default,
     errorElement: <ErrorPage/>,
     Component: Root,
     children: [
@@ -14,7 +13,7 @@ export const routes: RouteObject[] = [
         errorElement: <ErrorPage/>,
         children: [
           {
-            index: true,
+            path: routeLinks.default,
             Component: TodoPage,
           },
           {
