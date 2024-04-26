@@ -1,3 +1,3 @@
 export const routeLinks = {
-  default: '/',
+  default: '/todo-list',
 } as const;
