@@ -1,0 +1,32 @@
+.todoItem {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #dcdcdc;
+  gap: 15px;
+}
+
+.fieldBox {
+  display: flex;
+  gap: 15px;
+}
+
+.todoContent {
+  word-break: break-word;
+}
+
+.todoContent[data-completed] {
+  text-decoration: line-through;
+}
+
+.todoAction {
+  cursor: pointer;
+  color: black;
+  transition: .1s;
+}
+
+.todoAction:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,22 @@
+.tabsNav {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+
+.tabItem {
+  padding: 5px 20px;
+  color: #b4b4b4;
+  cursor: pointer;
+  transition: .1s;
+  border-bottom: 2px solid transparent;
+}
+
+.tabItem:hover {
+  color: #8c8c8c;
+}
+
+.tabItem[data-active] {
+  color: #8c8c8c;
+  border-color: #281a59;
+}

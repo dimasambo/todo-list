@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.formInput {
+  border: none;
+  padding: 8px;
+  width: 70%;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: rgba(74, 74, 104, 0.1) 0px 2px 2px -1px inset;
+  background: rgb(224 229 232);
+}
+
+.formButton {
+  border: none;
+  padding: 0 18px;
+  outline: none;
+  border-radius: 6px;
+  background: #281a59;
+  color: white;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.formButton:hover {
+  background: #362479;
+}
