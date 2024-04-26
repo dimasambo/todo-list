@@ -14,3 +14,6 @@ be received from different endpoints.
 
 To make it easier for now, I could just add `deleted` field to the 
 interface and filter them on the client side.
+
+HashRouter using to address the issue with page reload on refresh 
+on github pages.
